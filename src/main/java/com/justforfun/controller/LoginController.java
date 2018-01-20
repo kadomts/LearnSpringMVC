@@ -2,14 +2,12 @@ package com.justforfun.controller;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.ResponseBody;
+import org.springframework.web.bind.annotation.RequestMethod;
 
 @Controller
 public class LoginController {
-
-    @RequestMapping(value = "/dummy")
-    @ResponseBody
-    public String sayHello() {
-        return "Hello World dummy";
+    @RequestMapping(value = "/login", method = RequestMethod.GET)
+    public String showLoginPage() {
+        return "login";
     }
 }
