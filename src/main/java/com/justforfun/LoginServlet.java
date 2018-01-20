@@ -1,4 +1,4 @@
-package webapp;
+package com.justforfun;
 
 import java.io.IOException;
 

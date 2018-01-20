@@ -1,4 +1,4 @@
-package webapp;
+package com.justforfun;
 
 public class LoginService {
     public boolean validateUser(String user, String password) {
